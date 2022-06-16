@@ -1,0 +1,29 @@
+### Resgiter request to Authentication for User
+POST http://localhost:2022/user/register
+Content-Type: application/json
+
+{
+    "fname":"imran",
+    "lname":"ALI",
+    "email":"imran@gmail.com",
+    "password":"imran@123"
+}
+
+
+### Getting All Data
+GET http://localhost:2022/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI2MmE4Nzk0ZjUzN2VjZGY3MDBhMWYwZDQiLCJpYXQiOjE2NTUzNzg5OTUsImV4cCI6MTY1NTQwMDU5NX0.oWLVpXYpxvxJS1bifQ7ye6ToPinRwJZ_CmELbvTBNY4
+
+### Resgiter request to Authentication for register
+POST http://localhost:2022/user/login
+Content-Type: application/json
+
+{
+    "email":"imran@gmail.com",
+    "password":"imran@123"
+}
+
+
+### Resgiter request to Authentication for register
+GET http://localhost:2022/user/welcome/
+
